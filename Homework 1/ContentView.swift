@@ -8,21 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    struct Sphere {
-        var radius: Double
-        func spherevolume()-> Double {
-            return 4/3*Double.pi*pow(radius,3)
-        }
-        func boxvolume()-> Double {
-            return pow(2*radius, 3)
-        }
-        func spheresurf()-> Double {
-            return 4*Double.pi*pow(radius,2)
-        }
-        func boxsurf()-> Double {
-            return 6*pow(2*radius,2)
-        }
-    }
+    
     @State var number: Int
     @State var object=Sphere(radius: 2.0)
     var body: some View {

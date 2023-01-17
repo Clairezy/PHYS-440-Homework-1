@@ -14,6 +14,7 @@
 		7E4AB71D2974A485000A5ED6 /* Homework_1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4AB71C2974A485000A5ED6 /* Homework_1Tests.swift */; };
 		7E4AB7272974A485000A5ED6 /* Homework_1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4AB7262974A485000A5ED6 /* Homework_1UITests.swift */; };
 		7E4AB7292974A485000A5ED6 /* Homework_1UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4AB7282974A485000A5ED6 /* Homework_1UITestsLaunchTests.swift */; };
+		7E4AB7362974BF03000A5ED6 /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4AB7352974BF03000A5ED6 /* Shape.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		7E4AB7222974A485000A5ED6 /* Homework 1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Homework 1UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E4AB7262974A485000A5ED6 /* Homework_1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homework_1UITests.swift; sourceTree = "<group>"; };
 		7E4AB7282974A485000A5ED6 /* Homework_1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homework_1UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7E4AB7352974BF03000A5ED6 /* Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 				7E4AB70B2974A484000A5ED6 /* Homework_1App.swift */,
 				7E4AB70D2974A484000A5ED6 /* ContentView.swift */,
 				7E4AB70F2974A485000A5ED6 /* Assets.xcassets */,
+				7E4AB7352974BF03000A5ED6 /* Shape.swift */,
 				7E4AB7112974A485000A5ED6 /* Preview Content */,
 			);
 			path = "Homework 1";
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E4AB70E2974A484000A5ED6 /* ContentView.swift in Sources */,
+				7E4AB7362974BF03000A5ED6 /* Shape.swift in Sources */,
 				7E4AB70C2974A484000A5ED6 /* Homework_1App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
