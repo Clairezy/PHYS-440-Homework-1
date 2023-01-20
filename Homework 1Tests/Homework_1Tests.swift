@@ -33,4 +33,14 @@ final class Homework_1Tests: XCTestCase {
         }
     }
 
+    func testNans() throws {
+        
+        XCTAssertThrowsError(try Sphere(radius: -1.0), "Should throw negative dimension error.") { (error) in
+            XCTAssertEqual(error as! shapeError, shapeError.negativeDimension)
+        }
+        XCTAssertThrowsError(try Sphere(radius: 0.0), "Should throw no dimension error.") { (error) in
+            XCTAssertEqual(error as! shapeError, shapeError.noDimension)
+        }
+        
+    }
 }

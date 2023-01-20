@@ -8,23 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
-    
-    @State var number: Int
-    @State var object=Sphere(radius: 2.0)
+    @State var object=try! Sphere(radius: 1.0)
     var body: some View {
-        
-        VStack {
-            Text("Volume of Sphere:")
-            Text("\(object.spherevolume())")
-            Text("Volume of Bounding Box:")
-            Text("\(object.boxvolume())")
-            Text("Surface Area of Sphere:")
-            Text("\(object.spheresurf())")
-            Text("Surface Area of Bounding Box:")
-            Text("\(object.boxsurf())")
+        VStack(alignment: .center) {
             
-            TextField("Enter radius", value: $object.radius, format: .number)
-            Button("Add 10", action: add10)
+            HStack(alignment: .center) {
+                Text("Radius:")
+                TextField("Enter radius", value: $object.radius, format: .number)
+                Button("Add 10", action: add10)
+            }
+           
+            Text("Volume of Sphere: \(object.spherevolume())")
+            Text("Volume of Bounding Box: \(object.boxvolume())")
+            Text("Surface Area of Sphere: \(object.spheresurf())")
+            Text("Surface Area of Bounding Box: \(object.boxsurf())")
         }
         .padding()
     }
@@ -35,6 +32,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(number: 10)
+        ContentView()
     }
 }

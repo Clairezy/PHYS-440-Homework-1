@@ -7,8 +7,37 @@
 
 import Foundation
 
+enum shapeError: Error {
+    case negativeDimension
+    case noDimension
+}
+
 struct Sphere {
-    var radius: Double
+    private var _radius: Double = 0.0 //create a double called radius when Sphere is called
+    
+    var radius: Double {
+        get{
+            return self._radius
+        }
+        set{
+            if newValue > 0.0 {
+                self._radius = newValue
+            }
+        }
+    }
+    
+    init(radius: Double) throws {
+        
+        guard radius >= 0 else {
+            throw shapeError.negativeDimension
+        }
+        guard radius != 0 else {
+            throw shapeError.noDimension
+        }
+        
+        self.radius = radius
+    }
+    
     func spherevolume()-> Double {
         return 4/3*Double.pi*pow(radius,3)
     }
